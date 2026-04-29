@@ -23,4 +23,4 @@ class StudentsGWATracker:
                     else:
                         print('No valid data found.')
         except FileNotFoundError:
-            pritn('Error: students.txt is not found.')
+            print('Error: students.txt is not found.')
