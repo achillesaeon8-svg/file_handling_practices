@@ -1,10 +1,10 @@
 class OddAndEvenSettings:
     def __init__(self, source_filename):
-        chosen_file = source_filename
+        self.chosen_file = source_filename
     
     def sort_numbers(self):
         try:
-            with open(chosen_file, 'r') as file:
+            with open(self.chosen_file, 'r') as file:
                 for line in file:
                     number = int(line.strip())
 
