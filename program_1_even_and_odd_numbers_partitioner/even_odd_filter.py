@@ -20,11 +20,17 @@ class OddAndEvenSettings:
                         odd.append(str(number))
 
             with open('program_1_even_and_odd_numbers_partitioner/even.txt', 'w') as even_text_file:
-                result = ', '.join(odd) + '.'
-                even_text_file.write(result)
+                    main_list = ', '.join(even) + '.'
+                    end_number_list = even[-1]
+                    even_result = f'{main_list}, and {end_number_list}'
+                    even_text_file.write(even_result)
+            
             with open('program_1_even_and_odd_numbers_partitioner/odd.txt', 'w') as odd_text_file:        
-                result = ', '.join(even) + '.'
-                odd_text_file.write(result) + '.'
+                if len(odd) > 1:
+                    main_list = ', '.join(odd) + '.'
+                    end_number_list = odd[-1]
+                    odd_result = f'{main_list}, and {end_number_list}'
+                    odd_text_file.write(odd_result)
                 
             print('Analyzing complete successfully.')
 
