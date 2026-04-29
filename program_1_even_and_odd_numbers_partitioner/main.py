@@ -1,0 +1,1 @@
+selected_file = open('number.txt', 'w')
