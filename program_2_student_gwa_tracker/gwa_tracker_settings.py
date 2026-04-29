@@ -9,7 +9,7 @@ class StudentsGWATracker:
         try:
             with open(self.filename, 'r') as file:
                 for line in file:
-                    parts_of_line = line.strip().strip(',')
+                    parts_of_line = line.strip().split(',')
                     
                     if len(parts_of_line) == 2:
                         students_name = parts_of_line[0].strip()
