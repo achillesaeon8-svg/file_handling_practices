@@ -5,7 +5,7 @@ class IntegerProcessorWithPowered:
 
     def process_integers(self):
         try:
-            with open(self.source_file, 'r') as file, \
+            with open(self.source_filename, 'r') as file, \
                 open('program_4_integer_processor_containing_power_functions/double.txt', 'w') as squared_file, \
                 open('program_4_integer_processor_containing_power_functions/triple.txt', 'w') as cube_file:
 
