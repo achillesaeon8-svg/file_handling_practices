@@ -4,16 +4,24 @@ class OddAndEvenSettings:
     
     def sort_numbers(self):
         try:
-            with open(self.chosen_file, 'r') as file:
+            with open(self.chosen_file, 'r') as file, \
+                open('even.txt', 'w') as even_text_file, \
+                open('odd.txt', 'w') as odd_text_file:
+                    
                 for line in file:
-                    number = int(line.strip())
+                    clean_line = line.strip()
+                    if not clean_line:
+                        continue
+
+                    number = int(clean_line)
 
                     if number % 2 == 0:
-                        open('even.txt', 'w')
+                        even_text_file.write(f'{number}\n')
                     else:
-                        open('odd.txt', 'w')
+                        odd_text_file.write(f'{number}\n')
                     
             print('Analyzing complete successfully.')
+
         except FileNotFoundError:
             print('Error: File not found')
         except ValueError:
