@@ -11,7 +11,7 @@ class OddAndEvenSettings:
                     if number % 2 == 0:
                         open('even.txt', 'w')
                     else:
-                        open('odd.txt', 'r')
+                        open('odd.txt', 'w')
                     
             print('Analyzing complete successfully.')
         except FileNotFoundError:
