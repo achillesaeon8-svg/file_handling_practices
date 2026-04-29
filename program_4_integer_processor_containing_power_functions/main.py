@@ -1,0 +1,6 @@
+from integer_processor_settings import IntegerProcessorWithPowered
+
+selected_file = 'program_4_integer_processor_containing_power_functions/integers.txt'
+
+processor = IntegerProcessorWithPowered(selected_file)
+processor.process_integers()
