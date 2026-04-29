@@ -1,6 +1,6 @@
 from gwa_tracker_settings import StudentsGWATracker
 
-selected_file = 'program_2_student_gwa_tracker/student.txt'
+selected_file = 'program_2_student_gwa_tracker/students.txt'
 
 tracker = StudentsGWATracker(selected_file)
-tracker.find_hightest_gwa
+tracker.find_hightest_gwa()
